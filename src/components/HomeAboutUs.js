@@ -1,5 +1,7 @@
 import React from 'react';
 
 export function HomeAboutUs() {
-    return <h1>HomeAboutUs</h1>;
+    return (
+            <h1>HomeAboutUs</h1>
+    );
 }
