@@ -1,0 +1,46 @@
+.home--steps {
+  text-align: center;
+}
+.home--steps-text {
+  p {
+    font-size: 2.5rem;
+    letter-spacing: -0.76px;
+    color: #3C3C3C;
+    margin-top: 3.5rem;
+  }
+  img {
+    margin: 2rem 0 2rem 0;
+  }
+}
+.home--steps-elements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: $color-shade-fourth;
+  height: 20rem;
+  .steps-element {
+    width: 10rem;
+    color: $color-shade-first;
+    img {
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    :nth-child(2) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+    :nth-child(4) {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+  }
+}
+.home--steps-calltoaction {
+  .btn {
+    width: 17rem;
+    height: 7.5rem;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 3rem 0 6rem 0;
+  }
+}
