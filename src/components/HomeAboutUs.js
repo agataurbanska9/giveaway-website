@@ -5,7 +5,6 @@ import people from '../assets/People.jpg';
 
 export function HomeAboutUs() {
     return (
-
         <section className='home home--aboutus container'>
             <div className='aboutus--text'>
                 <p>O nas</p>
