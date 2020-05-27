@@ -3,7 +3,7 @@ import decoration from "../assets/Decoration.svg";
 
 export function HomeHelp() {
     return (
-        <section className='home home--help container'>
+        <section className='home home--help container' id='homeHelp'>
             <h3>Komu pomagamy?</h3>
             <img src={decoration} alt='Decoration'/>
             <div className='buttons'>

@@ -5,8 +5,8 @@ import instagram from '../assets/Instagram.svg';
 
 export function HomeContact() {
     return (
-        <section className='home home--contact container'>
-            <div className='contact--form' id='contact'>
+        <section className='home home--contact container' id='homeContact'>
+            <div className='contact--form'>
                 <h3>Skontaktuj się z nami</h3>
                 <img src={decoration} alt='Decoration'/>
                 <form>

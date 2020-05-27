@@ -5,12 +5,10 @@ import {HomeSteps} from "./HomeSteps";
 import {HomeAboutUs} from "./HomeAboutUs";
 import {HomeHelp} from "./HomeHelp";
 import {HomeContact} from "./HomeContact";
-import {NavBar} from "./NavBar";
 
 export function Home() {
     return (
         <>
-            <NavBar/>
             <HomeHeader/>
             <HomeThreeColumns/>
             <HomeSteps/>
