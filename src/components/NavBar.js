@@ -1,27 +1,34 @@
 import React from 'react';
-import Scroll from 'react-scroll';
-const ScrollLink = Scroll.ScrollLink
-
+import {LogIn} from "./LogIn";
+import {NewAccount} from "./NewAccount";
+import {Home} from "./Home";
+import {
+    HashRouter,
+    Switch,
+    Route,
+    Link
+    // NavLink
+} from 'react-router-dom';
 
 export function NavBar() {
     return (
-        <nav className='nav' id='navbar'>
+        <nav className='nav'>
+            <HashRouter>
+                <div>
+                    <ul>
+                        <li><Link to='/logowanie'>Zaloguj</Link></li>
+                        <li><Link to='/rejestracja'>Załóż konto</Link></li>
+                        <li><Link to='/'>Start</Link></li>
+                    </ul>
+                </div>
 
-            <ScrollLink to='destination'
-                        spy={true}
-                        smooth={true}
-                        duartion={500}
-                        className='someclass'
-                        activeClass = 'someactiveclass'>Text linka</ScrollLink>
-
-            {/*<div className='nav--content'>*/}
-            {/*    <ul className='nav--items'>*/}
-            {/*        <li><a href='#contact'>Kontakt</a></li>*/}
-            {/*    </ul>*/}
-            {/*</div>*/}
-
+                <Switch>
+                    <Route path='/logowanie' component={LogIn}/>
+                    <Route path='/rejestracja' component={NewAccount}/>
+                    <Route exact path='/' component={Home}/>
+                </Switch>
+            </HashRouter>
         </nav>
     );
-
 }
 

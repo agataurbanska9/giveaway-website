@@ -6,7 +6,7 @@ export function HomeHeader() {
     return (
         <section className='home home--header container'>
             <div className='header--img'>
-                <img src={homehero} alt='Home Hero Image' className='home--hero-img'/>
+                <img src={homehero} alt='Home Hero' className='home--hero-img'/>
             </div>
             <div className='header--content'>
                 <p>Zacznij pomagać!</p>

@@ -1,0 +1,29 @@
+
+.home--contact {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  h3 {
+    font-size: 2.5rem;
+    color: $color-shade-first;
+    letter-spacing: -0.76px;
+  }
+  img {
+    margin: 2rem 0;
+  }
+  form {
+    width: 33rem;
+    label {
+      font-size: 1rem;
+      ::placeholder {
+        color: $color-shade-fourth;
+      }
+    }
+  }
+}
