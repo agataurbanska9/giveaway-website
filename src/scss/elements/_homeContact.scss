@@ -18,12 +18,40 @@
     margin: 2rem 0;
   }
   form {
-    width: 33rem;
+    width: 34rem;
+    :nth-child(3) {
+      margin-top: 2.5rem;
+    }
     label {
-      font-size: 1rem;
+      font-size: 1rem; //semibold
+      display: inline-block;
+      margin-left: 0.75rem;
+      textarea {
+        border: none;
+        border-bottom: 1px solid $color-shade-first;
+        width: 33rem;
+        height: 6rem;
+        margin: 0.75rem 0;
+      }
+      input {
+        width: 16rem;
+        border: none;
+        border-bottom: 1px solid $color-shade-first;
+        font-size: 1.125rem;
+        margin: 0.75rem 0;
+      }
       ::placeholder {
         color: $color-shade-fourth;
+        font-family: $font-base;
       }
     }
   }
+}
+.btn--home-send {
+  float: right;
+  font-size: 1.125rem;
+  font-weight: 300; //do zmiany
+  padding: 0.8rem 3.3rem;
+  margin-top: 2rem;
+
 }
