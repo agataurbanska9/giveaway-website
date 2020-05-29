@@ -18,20 +18,11 @@ export function LogIn() {
                             Hasło <br/>
                             <input type='password' name='password'/>
                         </label>
-
                     </div>
-
-
                     <input type="submit" value="Zaloguj się" className='btn btn--login-send'/>
                     <button className='btn btn--registry'>Załóż konto</button>
                 </form>
-
-
             </div>
-
         </section>
-
-
-
     );
 }
