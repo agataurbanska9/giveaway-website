@@ -14,7 +14,7 @@
     color: $color-shade-first;
     letter-spacing: -0.76px;
   }
-  img {
+  .decoration {
     margin: 2rem 0;
   }
   form {
@@ -53,5 +53,7 @@
   font-weight: 300; //do zmiany
   padding: 0.8rem 3.3rem;
   margin-top: 2rem;
-
+}
+.bg {
+background: url(../../assets/Background-Contact-Form.jpg);
 }

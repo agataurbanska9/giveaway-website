@@ -1,14 +1,14 @@
 import React from 'react';
 import decoration from "../assets/Decoration.svg";
-import facebook from '../assets/Facebook.svg';
-import instagram from '../assets/Instagram.svg';
+import {HomeFooter} from "./HomeFooter";
 
 export function HomeContact() {
     return (
+        <div className='bg'>
         <section className='home home--contact container' id='homeContact'>
             <div className='contact--form'>
                 <h3>Skontaktuj się z nami</h3>
-                <img src={decoration} alt='Decoration'/>
+                <img src={decoration} alt='Decoration' className='decoration'/>
                 <form>
                     <label>
                         Wpisz swoje imię <br/>
@@ -24,10 +24,9 @@ export function HomeContact() {
                     </label>
                     <input type="submit" value="Wyślij" className='btn btn--home-send'/>
                 </form>
-                <p>Copyright by CodersLab</p>
-                <img src={facebook} alt='facebook icon'/>
-                <img src={instagram} alt='instagram icon'/>
             </div>
         </section>
+        <HomeFooter/>
+        </div>
     );
 }
