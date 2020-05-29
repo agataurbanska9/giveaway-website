@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import {Link as LinkScroll} from 'react-scroll';
 
 export function NavBar() {
@@ -7,11 +7,11 @@ export function NavBar() {
             <nav className='container'>
                 <div className='navbars'>
                     <ul className='nav--log'>
-                        <li><Link to='/logowanie'>Zaloguj</Link></li>
-                        <li><Link to='/rejestracja'>Załóż konto</Link></li>
+                        <li><NavLink to='/logowanie' activeClassName='selected'>Zaloguj</NavLink></li>
+                        <li><NavLink to='/rejestracja' activeClassName='selected'>Załóż konto</NavLink></li>
                     </ul>
                     <ul className='nav--home'>
-                        <li><Link to='/'>Start</Link></li>
+                        <li><NavLink to='/' activeClassName='selected--home'>Start</NavLink></li>
                         <li><LinkScroll
                             activeClass="active"
                             to="homeThreeColumns"

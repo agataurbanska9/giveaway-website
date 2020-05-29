@@ -3,6 +3,10 @@ import decoration from '../assets/Decoration.svg'
 import homehero from '../assets/Home-Hero-Image.jpg'
 
 export function HomeHeader() {
+
+    const handleClick = () => {
+
+    }
     return (
         <section className='home home--header container'>
             <div className='header--img'>
@@ -13,6 +17,7 @@ export function HomeHeader() {
                 <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                 <img src={decoration} alt='Decoration'/>
                 <div className='buttons'>
+                    <button onClick={handleClick} type='button'>Hello</button>
                     <button className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</button>
                     <button className='btn btn--home-zbiorka'>Zorganizuj zbiórkę</button>
                 </div>
