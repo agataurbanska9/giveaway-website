@@ -4,14 +4,13 @@ import {Link as LinkScroll} from 'react-scroll';
 
 export function NavBar() {
     return (
-            <nav>
-                <div>
-                    <ul>
+            <nav className='container'>
+                <div className='navbars'>
+                    <ul className='nav--log'>
                         <li><Link to='/logowanie'>Zaloguj</Link></li>
                         <li><Link to='/rejestracja'>Załóż konto</Link></li>
                     </ul>
-                    <br/>
-                    <ul>
+                    <ul className='nav--home'>
                         <li><Link to='/'>Start</Link></li>
                         <li><LinkScroll
                             activeClass="active"
@@ -45,7 +44,6 @@ export function NavBar() {
                             offset={-70}
                             duration={500}
                         >Kontakt</LinkScroll></li>
-
                     </ul>
                 </div>
             </nav>
