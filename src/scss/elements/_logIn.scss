@@ -15,17 +15,23 @@
   }
 }
 form {
-  width: 24rem;
+  text-align: left;
 }
 
 .labels {
+  //padding: 2rem;
   background: $color-shade-fourth;
   label {
-    font-size: 1rem;
+    //margin: 1rem 0;
+    //padding-bottom: 3rem;
+    //font-size: 1rem;
+    margin-bottom: 2rem;
     input {
       background: none;
       border: none;
-      border-bottom: 2px solid $color-shade-third;
+      border-bottom: 1px solid $color-shade-third;
+      width: 15rem;
+      height: 2.5rem;
     }
   }
 }
