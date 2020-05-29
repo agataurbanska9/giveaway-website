@@ -11,7 +11,6 @@ export function HomeFooter() {
                 <img src={facebook} alt='facebook icon'/>
                 <img src={instagram} alt='instagram icon'/>
             </div>
-
         </div>
     )
 
