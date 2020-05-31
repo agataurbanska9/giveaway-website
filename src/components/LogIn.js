@@ -19,8 +19,10 @@ export function LogIn() {
                             <input type='password' name='password'/>
                         </label>
                     </div>
-                    <input type="submit" value="Zaloguj się" className='btn btn--login-send'/>
-                    <button className='btn btn--registry'>Załóż konto</button>
+                    <div className='form--btns'>
+                        <button className='btn btn--registry'>Załóż konto</button>
+                        <input type="submit" value="Zaloguj się" className='btn btn--login-send'/>
+                    </div>
                 </form>
             </div>
         </section>

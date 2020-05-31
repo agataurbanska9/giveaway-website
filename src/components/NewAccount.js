@@ -1,5 +1,34 @@
 import React from 'react';
+import decoration from "../assets/Decoration.svg";
 
 export function NewAccount() {
-    return <h1>NewAccount</h1>;
-}
+    return (
+        <section className='container newAccount'>
+            <div className='newAccount--form'>
+                <p>Załóż konto</p>
+                <img src={decoration} alt='Decoration'/>
+                <form>
+                    <div className='labels'>
+                        <label>
+                            Email <br/>
+                            <input type='email' name='email'/>
+                        </label>
+                        <br/>
+                        <label>
+                            Hasło <br/>
+                            <input type='password' name='password'/>
+                        </label>
+                        <br/>
+                        <label>
+                            Powtórz hasło <br/>
+                            <input type='password' name='password'/>
+                        </label>
+                    </div>
+                    <div className='form--btns'>
+                        <button className='btn btn--login'>Zaloguj się</button>
+                        <input type="submit" value="Załóż konto" className='btn btn--registry'/>
+                    </div>
+                </form>
+            </div>
+        </section>
+    );}
