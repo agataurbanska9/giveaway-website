@@ -1,6 +1,7 @@
 import React from 'react';
 import decoration from '../assets/Decoration.svg';
 import homehero from '../assets/Home-Hero-Image.jpg';
+import {Link} from "react-router-dom";
 
 export function HomeHeader() {
 
@@ -14,8 +15,8 @@ export function HomeHeader() {
                 <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                 <img src={decoration} alt='Decoration'/>
                 <div className='buttons'>
-                    <button className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</button>
-                    <button className='btn btn--home-zbiorka'>Zorganizuj zbiórkę</button>
+                    <Link to='/logowanie' className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</Link>
+                    <Link to='/logowanie' className='btn btn--home-zbiorka'>Zorganizuj zbiórkę</Link>
                 </div>
 
             </div>

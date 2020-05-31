@@ -4,6 +4,7 @@ import tshirt from '../assets/Icon-1.svg';
 import shoppingbag from '../assets/Icon-2.svg';
 import magnifier from '../assets/Icon-3.svg';
 import arrows from '../assets/Icon-4.svg';
+import {Link} from "react-router-dom";
 
 export function HomeSteps() {
     return (
@@ -39,7 +40,7 @@ export function HomeSteps() {
                 </div>
             </div>
             <div className='home--steps-calltoaction'>
-                <button className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</button>
+                <Link to='/logowanie' className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</Link>
             </div>
         </section>
 
