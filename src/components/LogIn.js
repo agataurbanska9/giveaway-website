@@ -1,5 +1,6 @@
 import React from 'react';
 import decoration from "../assets/Decoration.svg";
+import {Link} from "react-router-dom";
 
 export function LogIn() {
     return (
@@ -20,7 +21,8 @@ export function LogIn() {
                         </label>
                     </div>
                     <div className='form--btns'>
-                        <button className='btn btn--registry'>Załóż konto</button>
+                        {/*<Link to='/logowanie'>Zaloguj się</Link>*/}
+                        <Link to='/rejestracja' className='btn btn--registry'>Załóż konto</Link>
                         <input type="submit" value="Zaloguj się" className='btn btn--login-send'/>
                     </div>
                 </form>
