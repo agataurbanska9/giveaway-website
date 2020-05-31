@@ -26,7 +26,6 @@ export function NewAccount() {
                         </label>
                     </div>
                     <div className='form--btns'>
-                        {/*<Link to='/logowanie'>Zaloguj się</Link>*/}
                         <Link to='/logowanie' className='btn btn--login'>Zaloguj się</Link>
                         <input type="submit" value="Załóż konto" className='btn btn--registry'/>
                     </div>

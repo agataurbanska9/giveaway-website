@@ -21,7 +21,6 @@ export function LogIn() {
                         </label>
                     </div>
                     <div className='form--btns'>
-                        {/*<Link to='/logowanie'>Zaloguj się</Link>*/}
                         <Link to='/rejestracja' className='btn btn--registry'>Załóż konto</Link>
                         <input type="submit" value="Zaloguj się" className='btn btn--login-send'/>
                     </div>
