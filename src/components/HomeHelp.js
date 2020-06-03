@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import decoration from "../assets/Decoration.svg";
-import {HomeHelpTable} from "./HomeHelp-table";
+import {HomeHelpTable} from "./HomeHelpTable";
 
 export function HomeHelp() {
     const [page, setPage] = useState('foundation');
@@ -9,6 +9,7 @@ export function HomeHelp() {
     }
 
     return (
+        <>
         <section className='home home--help container' id='homeHelp'>
             <h3>Komu pomagamy?</h3>
             <img src={decoration} alt='Decoration'/>
@@ -18,10 +19,9 @@ export function HomeHelp() {
                 <button className='btn btn--home-zbiorki' value='local' onClick={handleClick}>Lokalnym zbiórkom</button>
             </div>
             <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
-            <div>panel przewijany</div>
-            <HomeHelpTable page={page}/>
-
         </section>
+            <HomeHelpTable/>
+        </>
 
     );
 }
