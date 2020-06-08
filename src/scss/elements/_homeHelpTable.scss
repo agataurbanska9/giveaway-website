@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
 }
-
 .homeHelpTable {
   width: 70%;
   margin: 6rem 2rem;
@@ -11,7 +10,6 @@
     border-top: 1px solid $color-shade-third;
   }
 }
-
 .helpTable--row {
   display: flex;
   justify-content: space-between;
@@ -30,7 +28,6 @@
       font-size: 1.125rem;
       font-weight: 300;
       line-height: 1.5rem;
-
     }
     p {
       font-size: 1.125rem;

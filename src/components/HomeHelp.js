@@ -7,7 +7,6 @@ export function HomeHelp() {
     const handleClick = (e) => {
         setPage(e.target.value);
     }
-
     return (
         <>
         <section className='home home--help container' id='homeHelp'>
@@ -20,8 +19,7 @@ export function HomeHelp() {
             </div>
             <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
         </section>
-            <HomeHelpTable/>
+            <HomeHelpTable page={page}/>
         </>
-
     );
 }

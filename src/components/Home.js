@@ -15,6 +15,7 @@ export function Home() {
             <HomeAboutUs/>
             <HomeHelp/>
             <HomeContact/>
+            {/*TODO- formularz do oddania rzeczy*/}
         </>
     );
 }

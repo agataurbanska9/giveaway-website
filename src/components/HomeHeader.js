@@ -4,7 +4,6 @@ import homehero from '../assets/Home-Hero-Image.jpg';
 import {Link} from "react-router-dom";
 
 export function HomeHeader() {
-
     return (
         <section className='home home--header container'>
             <div className='header--img'>
@@ -18,7 +17,6 @@ export function HomeHeader() {
                     <Link to='/logowanie' className='btn btn--home-oddajrzeczy'>Oddaj rzeczy</Link>
                     <Link to='/logowanie' className='btn btn--home-zbiorka'>Zorganizuj zbiórkę</Link>
                 </div>
-
             </div>
         </section>
     );
