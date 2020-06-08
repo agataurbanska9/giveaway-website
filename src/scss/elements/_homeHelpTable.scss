@@ -1,10 +1,15 @@
 .section--table {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+  font-family: $font-alt;
+  font-weight: 300;
 }
 .homeHelpTable {
   width: 70%;
-  margin: 6rem 2rem;
+  margin: 6rem 2rem 2rem 2rem;
   div:nth-child(2) {
     border-bottom: 1px solid $color-shade-third;
     border-top: 1px solid $color-shade-third;
@@ -15,24 +20,28 @@
   justify-content: space-between;
   align-items: center;
   height: 6rem;
-  font-family: $font-alt;
   margin: 0.5rem 0;
   span{
     text-align: left;
     :nth-child(1) {
       font-size: 1.625rem;
       line-height: 2rem;
-      font-weight: 300;
     }
     :nth-child(2) {
       font-size: 1.125rem;
-      font-weight: 300;
       line-height: 1.5rem;
     }
     p {
       font-size: 1.125rem;
-      font-weight: 300;
-
     }
+  }
+}
+.btn-paginate {
+  font-size: 1.125rem;
+  button {
+    border: 1px solid $color-shade-third;
+    background: none;
+    padding: 13px 15px;
+    margin: 0.25rem;
   }
 }
